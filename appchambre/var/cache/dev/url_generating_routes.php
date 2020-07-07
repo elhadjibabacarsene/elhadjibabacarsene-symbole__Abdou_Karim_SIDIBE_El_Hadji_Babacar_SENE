@@ -15,4 +15,13 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
+    'batiment' => [[], ['_controller' => 'App\\Controller\\BatimentController::index'], [], [['text', '/batiment']], [], []],
+    'chambre' => [[], ['_controller' => 'App\\Controller\\ChambreController::index'], [], [['text', '/chambre']], [], []],
+    'addchambre' => [[], ['_controller' => 'App\\Controller\\ChambreController::addChambre'], [], [['text', '/chambre/addchambre']], [], []],
+    'generernumerochambre' => [[], ['_controller' => 'App\\Controller\\ChambreController::getNewNumeroChambre'], [], [['text', '/chambre/generernumerochambre']], [], []],
+    'listetudiant' => [[], ['_controller' => 'App\\Controller\\EtudiantController::index'], [], [['text', '/etudiant']], [], []],
+    'alllistetudiant' => [[], ['_controller' => 'App\\Controller\\EtudiantController::allEtudiant'], [], [['text', '/alllistetudiant']], [], []],
+    'type_bourse' => [[], ['_controller' => 'App\\Controller\\TypeBourseController::index'], [], [['text', '/type/bourse']], [], []],
+    'type_chambre' => [[], ['_controller' => 'App\\Controller\\TypeChambreController::index'], [], [['text', '/type/chambre']], [], []],
+    'fos_js_routing_js' => [['_format'], ['_controller' => 'fos_js_routing.controller::indexAction', '_format' => 'js'], ['_format' => 'js|json'], [['variable', '.', 'js|json', '_format', true], ['text', '/js/routing']], [], []],
 ];

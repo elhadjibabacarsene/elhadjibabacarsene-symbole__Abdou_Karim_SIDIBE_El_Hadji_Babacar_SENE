@@ -9,12 +9,20 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
+    <h1>Hello {{ controller_name | upper }}! ✅</h1>
+    {% if age == 17 %}
+        <p>Majeur</p>
+    {% else %}
+        <p>Bébé</p>
+    {% endif %}
     This friendly message is coming from:
     <ul>
         <li>Your controller at <code><a href="{{ '/Library/WebServer/Documents/sa/projets/appchambre/src/Controller/BatimentController.php'|file_link(0) }}">src/Controller/BatimentController.php</a></code></li>
         <li>Your template at <code><a href="{{ '/Library/WebServer/Documents/sa/projets/appchambre/templates/batiment/index.html.twig'|file_link(0) }}">templates/batiment/index.html.twig</a></code></li>
     </ul>
 </div>
+
+    {% for prenom,age in prenoms %}
+        <p>{{ prenom }} a {{ age }} ans</p>
+    {% endfor %}
 {% endblock %}

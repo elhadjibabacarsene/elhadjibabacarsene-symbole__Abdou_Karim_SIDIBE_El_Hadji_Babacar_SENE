@@ -1,0 +1,26 @@
+{
+  "entrypoints": {
+    "app": {
+      "js": [
+        "/build/runtime.js",
+        "/build/app.js"
+      ],
+      "css": [
+        "/build/app.css"
+      ]
+    },
+    "listeEtudiant": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors~listeEtudiant.js",
+        "/build/listeEtudiant.js"
+      ]
+    },
+    "addChambre": {
+      "js": [
+        "/build/runtime.js",
+        "/build/addChambre.js"
+      ]
+    }
+  }
+}

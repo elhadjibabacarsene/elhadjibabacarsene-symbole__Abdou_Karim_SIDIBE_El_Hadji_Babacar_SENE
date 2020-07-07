@@ -35,7 +35,6 @@ class TypeChambre
     }
 
 
-
     public function getId(): ?int
     {
         return $this->id;
@@ -51,6 +50,10 @@ class TypeChambre
         $this->libelle = $libelle;
 
         return $this;
+    }
+
+    public function __toString(){
+        return $this->libelle;
     }
 
     /**

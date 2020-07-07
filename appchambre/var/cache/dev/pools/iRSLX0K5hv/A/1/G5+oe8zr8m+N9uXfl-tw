@@ -1,0 +1,57 @@
+<?php //App_Entity_Etudiant
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Etudiant',
+                'id',
+                'matricule',
+                'nom',
+                'prenom',
+                'email',
+                'telephone',
+                'dateNaissance',
+                'statut',
+                'adresse',
+                'inshoused',
+                'idTypeBourse',
+                'numeroChambre',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'matricule' => $o[2],
+                    'nom' => $o[3],
+                    'prenom' => $o[4],
+                    'email' => $o[5],
+                    'telephone' => $o[6],
+                    'dateNaissance' => $o[7],
+                    'statut' => $o[8],
+                    'adresse' => $o[9],
+                    'inshoused' => $o[10],
+                    'idTypeBourse' => $o[11],
+                    'numeroChambre' => $o[12],
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

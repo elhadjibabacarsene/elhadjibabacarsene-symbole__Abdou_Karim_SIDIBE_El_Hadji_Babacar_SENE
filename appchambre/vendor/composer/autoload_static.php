@@ -41,6 +41,7 @@ class ComposerStaticInit93d9be4c740c89a6033fd5060384964b
         ),
         'S' => 
         array (
+            'Symfony\\WebpackEncoreBundle\\' => 28,
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Php73\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -121,6 +122,10 @@ class ComposerStaticInit93d9be4c740c89a6033fd5060384964b
         array (
             'Monolog\\' => 8,
         ),
+        'F' => 
+        array (
+            'FOS\\JsRoutingBundle\\' => 20,
+        ),
         'E' => 
         array (
             'Egulias\\EmailValidator\\' => 23,
@@ -176,6 +181,10 @@ class ComposerStaticInit93d9be4c740c89a6033fd5060384964b
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'Symfony\\WebpackEncoreBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src',
         ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
@@ -469,6 +478,10 @@ class ComposerStaticInit93d9be4c740c89a6033fd5060384964b
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'FOS\\JsRoutingBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/friendsofsymfony/jsrouting-bundle',
+        ),
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/src',
@@ -554,9 +567,32 @@ class ComposerStaticInit93d9be4c740c89a6033fd5060384964b
                 0 => __DIR__ . '/..' . '/ocramius/proxy-manager/src',
             ),
         ),
+        'J' => 
+        array (
+            'JsonpCallbackValidator' => 
+            array (
+                0 => __DIR__ . '/..' . '/willdurand/jsonp-callback-validator/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
+        'App\\Controller\\BatimentController' => __DIR__ . '/../..' . '/src/Controller/BatimentController.php',
+        'App\\Controller\\ChambreController' => __DIR__ . '/../..' . '/src/Controller/ChambreController.php',
+        'App\\Controller\\EtudiantController' => __DIR__ . '/../..' . '/src/Controller/EtudiantController.php',
+        'App\\Controller\\TypeBourseController' => __DIR__ . '/../..' . '/src/Controller/TypeBourseController.php',
+        'App\\Controller\\TypeChambreController' => __DIR__ . '/../..' . '/src/Controller/TypeChambreController.php',
+        'App\\Entity\\Batiment' => __DIR__ . '/../..' . '/src/Entity/Batiment.php',
+        'App\\Entity\\Chambre' => __DIR__ . '/../..' . '/src/Entity/Chambre.php',
+        'App\\Entity\\Etudiant' => __DIR__ . '/../..' . '/src/Entity/Etudiant.php',
+        'App\\Entity\\TypeBourse' => __DIR__ . '/../..' . '/src/Entity/TypeBourse.php',
+        'App\\Entity\\TypeChambre' => __DIR__ . '/../..' . '/src/Entity/TypeChambre.php',
+        'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
+        'App\\Repository\\BatimentRepository' => __DIR__ . '/../..' . '/src/Repository/BatimentRepository.php',
+        'App\\Repository\\ChambreRepository' => __DIR__ . '/../..' . '/src/Repository/ChambreRepository.php',
+        'App\\Repository\\EtudiantRepository' => __DIR__ . '/../..' . '/src/Repository/EtudiantRepository.php',
+        'App\\Repository\\TypeBourseRepository' => __DIR__ . '/../..' . '/src/Repository/TypeBourseRepository.php',
+        'App\\Repository\\TypeChambreRepository' => __DIR__ . '/../..' . '/src/Repository/TypeChambreRepository.php',
         'Collator' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/Collator.php',
         'Doctrine\\Bundle\\DoctrineBundle\\Command\\CreateDatabaseDoctrineCommand' => __DIR__ . '/..' . '/doctrine/doctrine-bundle/Command/CreateDatabaseDoctrineCommand.php',
         'Doctrine\\Bundle\\DoctrineBundle\\Command\\DoctrineCommand' => __DIR__ . '/..' . '/doctrine/doctrine-bundle/Command/DoctrineCommand.php',
@@ -1666,8 +1702,22 @@ class ComposerStaticInit93d9be4c740c89a6033fd5060384964b
         'Egulias\\EmailValidator\\Warning\\QuotedString' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/QuotedString.php',
         'Egulias\\EmailValidator\\Warning\\TLD' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/TLD.php',
         'Egulias\\EmailValidator\\Warning\\Warning' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/Warning.php',
+        'FOS\\JsRoutingBundle\\Command\\DumpCommand' => __DIR__ . '/..' . '/friendsofsymfony/jsrouting-bundle/Command/DumpCommand.php',
+        'FOS\\JsRoutingBundle\\Command\\RouterDebugExposedCommand' => __DIR__ . '/..' . '/friendsofsymfony/jsrouting-bundle/Command/RouterDebugExposedCommand.php',
+        'FOS\\JsRoutingBundle\\Controller\\Controller' => __DIR__ . '/..' . '/friendsofsymfony/jsrouting-bundle/Controller/Controller.php',
+        'FOS\\JsRoutingBundle\\DependencyInjection\\Configuration' => __DIR__ . '/..' . '/friendsofsymfony/jsrouting-bundle/DependencyInjection/Configuration.php',
+        'FOS\\JsRoutingBundle\\DependencyInjection\\FOSJsRoutingExtension' => __DIR__ . '/..' . '/friendsofsymfony/jsrouting-bundle/DependencyInjection/FOSJsRoutingExtension.php',
+        'FOS\\JsRoutingBundle\\Extractor\\ExposedRoutesExtractor' => __DIR__ . '/..' . '/friendsofsymfony/jsrouting-bundle/Extractor/ExposedRoutesExtractor.php',
+        'FOS\\JsRoutingBundle\\Extractor\\ExposedRoutesExtractorInterface' => __DIR__ . '/..' . '/friendsofsymfony/jsrouting-bundle/Extractor/ExposedRoutesExtractorInterface.php',
+        'FOS\\JsRoutingBundle\\FOSJsRoutingBundle' => __DIR__ . '/..' . '/friendsofsymfony/jsrouting-bundle/FOSJsRoutingBundle.php',
+        'FOS\\JsRoutingBundle\\Response\\RoutesResponse' => __DIR__ . '/..' . '/friendsofsymfony/jsrouting-bundle/Response/RoutesResponse.php',
+        'FOS\\JsRoutingBundle\\Serializer\\Denormalizer\\RouteCollectionDenormalizer' => __DIR__ . '/..' . '/friendsofsymfony/jsrouting-bundle/Serializer/Denormalizer/RouteCollectionDenormalizer.php',
+        'FOS\\JsRoutingBundle\\Serializer\\Normalizer\\RouteCollectionNormalizer' => __DIR__ . '/..' . '/friendsofsymfony/jsrouting-bundle/Serializer/Normalizer/RouteCollectionNormalizer.php',
+        'FOS\\JsRoutingBundle\\Serializer\\Normalizer\\RoutesResponseNormalizer' => __DIR__ . '/..' . '/friendsofsymfony/jsrouting-bundle/Serializer/Normalizer/RoutesResponseNormalizer.php',
+        'FOS\\JsRoutingBundle\\Util\\CacheControlConfig' => __DIR__ . '/..' . '/friendsofsymfony/jsrouting-bundle/Util/CacheControlConfig.php',
         'IntlDateFormatter' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/IntlDateFormatter.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'JsonpCallbackValidator' => __DIR__ . '/..' . '/willdurand/jsonp-callback-validator/src/JsonpCallbackValidator.php',
         'Locale' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/Locale.php',
         'Monolog\\DateTimeImmutable' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/DateTimeImmutable.php',
         'Monolog\\ErrorHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/ErrorHandler.php',
@@ -4744,6 +4794,21 @@ class ComposerStaticInit93d9be4c740c89a6033fd5060384964b
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'Symfony\\Polyfill\\Php73\\Php73' => __DIR__ . '/..' . '/symfony/polyfill-php73/Php73.php',
         'Symfony\\Polyfill\\Php80\\Php80' => __DIR__ . '/..' . '/symfony/polyfill-php80/Php80.php',
+        'Symfony\\WebpackEncoreBundle\\Asset\\EntrypointLookup' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/Asset/EntrypointLookup.php',
+        'Symfony\\WebpackEncoreBundle\\Asset\\EntrypointLookupCollection' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/Asset/EntrypointLookupCollection.php',
+        'Symfony\\WebpackEncoreBundle\\Asset\\EntrypointLookupCollectionInterface' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/Asset/EntrypointLookupCollectionInterface.php',
+        'Symfony\\WebpackEncoreBundle\\Asset\\EntrypointLookupInterface' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/Asset/EntrypointLookupInterface.php',
+        'Symfony\\WebpackEncoreBundle\\Asset\\IntegrityDataProviderInterface' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/Asset/IntegrityDataProviderInterface.php',
+        'Symfony\\WebpackEncoreBundle\\Asset\\TagRenderer' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/Asset/TagRenderer.php',
+        'Symfony\\WebpackEncoreBundle\\CacheWarmer\\EntrypointCacheWarmer' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/CacheWarmer/EntrypointCacheWarmer.php',
+        'Symfony\\WebpackEncoreBundle\\DependencyInjection\\Configuration' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/DependencyInjection/Configuration.php',
+        'Symfony\\WebpackEncoreBundle\\DependencyInjection\\WebpackEncoreExtension' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/DependencyInjection/WebpackEncoreExtension.php',
+        'Symfony\\WebpackEncoreBundle\\EventListener\\ExceptionListener' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/EventListener/ExceptionListener.php',
+        'Symfony\\WebpackEncoreBundle\\EventListener\\PreLoadAssetsEventListener' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/EventListener/PreLoadAssetsEventListener.php',
+        'Symfony\\WebpackEncoreBundle\\Exception\\EntrypointNotFoundException' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/Exception/EntrypointNotFoundException.php',
+        'Symfony\\WebpackEncoreBundle\\Exception\\UndefinedBuildException' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/Exception/UndefinedBuildException.php',
+        'Symfony\\WebpackEncoreBundle\\Twig\\EntryFilesTwigExtension' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/Twig/EntryFilesTwigExtension.php',
+        'Symfony\\WebpackEncoreBundle\\WebpackEncoreBundle' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/WebpackEncoreBundle.php',
         'Twig\\Cache\\CacheInterface' => __DIR__ . '/..' . '/twig/twig/src/Cache/CacheInterface.php',
         'Twig\\Cache\\FilesystemCache' => __DIR__ . '/..' . '/twig/twig/src/Cache/FilesystemCache.php',
         'Twig\\Cache\\NullCache' => __DIR__ . '/..' . '/twig/twig/src/Cache/NullCache.php',

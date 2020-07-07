@@ -75,6 +75,18 @@ class Etudiant
     private $numeroChambre;
 
 
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function setId(int$id): self
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
 
     public function getMatricule(): ?string
     {
